@@ -20,7 +20,7 @@ Hash tables (also known as "hash maps", or "maps") are so useful that they're a
 [Go programming language](https://golang.org). They allow you to create a simple lookup with a key/value pairing.
 
 For example, if you forget which Wiggle wears which color, you could create a map of color (key) to Wiggle name 
-(value), then refer to them by color through the map ([try it in the Go Playground](http://play.golang.org/p/BjXx4WDcT0):
+(value), then refer to them by color through the map ([try it in the Go Playground](http://play.golang.org/p/BjXx4WDcT0)):
 
 {% highlight golang %}
 // map of color -> wiggle (don't judge.)
@@ -92,7 +92,7 @@ I suppose it's a little late in the post to finally get to my implementation, bu
 how a hash table works, the code is just a bunch of marks on your screen. In my implementation, both the keys 
 and values are strings, but it wouldn't be too much work to make it more flexible.
 
-My two custom types are the [hashTable](https://github.com/wblakecaldwell/c-hashtable/blob/master/hashtable.h#L31-L35) and the [linked list](https://github.com/wblakecaldwell/c-hashtable/blob/master/hashtable.h#L22-L28)
+My two custom types are the [hashTable](https://github.com/wblakecaldwell/fun-with-c/blob/master/hash-table/hashtable.h#L31-L35) and the [linked list](https://github.com/wblakecaldwell/fun-with-c/blob/master/hash-table/hashtable.h#L22-L28)
 that represents each bucket:
 
 {% highlight c %}
@@ -146,7 +146,7 @@ With my comments, and an understanding of C, the rest of the code should be fair
 
 ## Demo
 
-As described in [README.md](https://github.com/wblakecaldwell/c-hashtable/blob/master/README.md):
+As described in [README.md](https://github.com/wblakecaldwell/fun-with-c/blob/master/hash-table/README.md):
 
 Compile and execute the binary to run the demo use case in main.c:
 
